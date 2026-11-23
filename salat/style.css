@@ -1,0 +1,15 @@
+:root { --bg: #f6f1e6; --ink: #1c2333; --soft: #5d6577; --card: #fffdf8; --green: #17a36c; --gold: #b9781a; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg: #0c1222; --ink: #f3eee3; --soft: #a5adc2; --card: #172138; --gold: #e8b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 ui-rounded, -apple-system, "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+header { display: flex; gap: 16px; align-items: center; margin-bottom: 28px; }
+header img { width: 72px; height: 72px; border-radius: 18px; box-shadow: 0 8px 24px rgb(0 0 0 / .15); }
+h1 { margin: 0; font-size: 30px; line-height: 1.15; }
+header p { margin: 2px 0 0; color: var(--soft); }
+h2 { margin: 36px 0 8px; font-size: 21px; }
+section, .card { background: var(--card); border-radius: 20px; padding: 6px 22px 18px; margin-top: 16px; box-shadow: 0 6px 20px rgb(0 0 0 / .05); }
+a { color: var(--green); }
+.muted { color: var(--soft); font-size: 15px; }
+.ar { direction: rtl; text-align: right; font-size: 19px; color: var(--gold); }
+nav { margin-top: 32px; display: flex; gap: 18px; }
